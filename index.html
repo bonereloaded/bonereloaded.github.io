@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<title>Bone Reloaded Project</title>
+
+<link rel="stylesheet" href="css/role.css">
+<link rel="stylesheet" href="css/navbar.css">
+<link rel="stylesheet" href="css/hero.css">
+<link rel="stylesheet" href="css/funding.css">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/header.css">
+<link rel="stylesheet" href="css/news.css">
+<link rel="stylesheet" href="css/members.css">
+<link rel="stylesheet" href="css/footer.css">
+
+</head>
+
+<script>
+
+window.addEventListener("scroll", function(){
+
+let navbar = document.getElementById("navbar");
+
+if(window.scrollY > 400){
+navbar.classList.add("visible");
+}
+else{
+navbar.classList.remove("visible");
+}
+
+});
+
+</script>
+
+
+<div class="progress-bar" id="progressBar"></div>
+
+<body>
+<div class="cursor-bg"></div>
+
+<header class="hero" id="hero">
+
+<div class="hero-overlay">
+
+<h1 class="hero-title">Bone Reloaded</h1>
+
+<p class="hero-subtitle">
+Biomechanical regulation of bone remodeling
+</p>
+
+</div>
+
+
+</header>
+
+<nav class="navbar" id="navbar">
+
+<div class="nav-container">
+
+<div class="logo">Bone Reloaded</div>
+
+<ul class="nav-links">
+
+<li><a href="#about">About</a></li>
+<li><a href="#news">News</a></li>
+<li><a href="#members">Team</a></li>
+
+</ul>
+
+</div>
+
+</nav>
+
+
+
+
+<section class="about" id="about">
+
+<h2>About the Project</h2>
+
+<p>
+Osteoporosis affects more than 200 million people worldwide and results from an imbalance in bone remodeling.
+The Bone Reloaded project investigates how biomechanical signals regulate the coupling between bone resorption and bone formation.
+</p>
+
+<p>
+Using a novel reversible stress-shielding model in sheep combined with spatial omics,
+biomechanical modeling, and computational systems biology,
+we aim to uncover the molecular pathways controlling bone remodeling.
+</p>
+
+</section>
+
+
+<section class="news" id="news">
+
+<h2>News</h2>
+
+<div class="newsbox">
+
+<h3>Postdoctoral Position in Bone Research</h3>
+
+<p>
+A 3-year postdoctoral position will be available from June 2026 in an FWF-funded project
+at the Ludwig Boltzmann Institute of Osteology in Vienna.
+</p>
+
+<p>
+The project studies how mechanical loading regulates cortical bone remodeling
+using a stress-shielding sheep model combined with spatial omics.
+</p>
+
+<p>
+<strong>Deadline:</strong> April 10, 2026 <br>
+<strong>Email:</strong> Reinhold.Erben@lbg.ac.at
+</p>
+
+</div>
+
+</section>
+
+
+<section class="members" id="members">
+
+<h2>Principal Investigators</h2>
+
+
+<a href="https://osteologie.lbg.ac.at/team/reinhold-g-erben-md-dvm/?lang=en" target="_blank" class="member-link">
+
+<div class="member">
+<span class="external-icon">↗</span>
+
+<img src="image/Erben.jpg">
+
+<h3>Reinhold G. Erben</h3>
+
+<p>Ludwig Boltzmann Institute of Osteology, Vienna</p>
+
+</div>
+
+</a>
+
+
+<a href="https://www.helmholtz-munich.de/en/aap/staff" target="_blank" class="member-link">
+
+<div class="member">
+<span class="external-icon">↗</span>
+
+<img src="image/walch.jpeg">
+
+<h3>Axel K. Walch</h3>
+
+<p>Helmholtz Center Munich</p>
+
+</div>
+
+</a>
+
+
+<a href="https://www.zbh.uni-hamburg.de/personen/csb/jbaumbach.html" target="_blank" class="member-link">
+
+<div class="member">
+<span class="external-icon">↗</span>
+
+<img src="image/baumbach.jpeg">
+
+<h3>Jan Baumbach</h3>
+
+<p>University of Hamburg</p>
+
+</div>
+
+</a>
+
+
+
+<a href="https://www.bme.master.unibe.ch/about_us/faculty/prof_dr_zysset_philippe/index_eng.html" target="_blank" class="member-link">
+
+<div class="member">
+<span class="external-icon">↗</span>
+<img src="image/zysset.jpg">
+
+<h3>Philippe Zysset</h3>
+
+<p>University of Bern</p>
+
+</div>
+
+</a>
+
+
+
+<a href="https://www.bme.master.unibe.ch/about_us/faculty/pd_dr_varga_peter/index_eng.html" target="_blank" class="member-link">
+
+<div class="member">
+<span class="external-icon">↗</span>
+<img src="image/VargaFoto.jpg">
+
+<h3>Peter Varga</h3>
+
+<p>AO Research Institute Davos</p>
+
+</div>
+
+</a>
+
+
+
+</section>
+
+
+<section class="roles" id="roles">
+
+<h2>Integrated Expertise</h2>
+
+<div class="roles-wrapper">
+
+  <!-- CENTER -->
+  <div class="center-node">
+    Bone Remodeling System
+  </div>
+
+  <!-- NODES -->
+  <div class="role-node top">
+    <h3>Bone Biology</h3>
+    <p>Reinhold Erben</p>
+  </div>
+
+  <div class="role-node right">
+    <h3>Biomechanics</h3>
+    <p>Philippe Zysset</p>
+  </div>
+
+  <div class="role-node bottom-right">
+    <h3>Implant Models</h3>
+    <p>Peter Varga</p>
+  </div>
+
+  <div class="role-node bottom-left">
+    <h3>Spatial Metabolomics</h3>
+    <p>Axel Walch</p>
+  </div>
+
+  <div class="role-node left">
+    <h3>Computational Systems Biology</h3>
+    <p>Jan Baumbach</p>
+  </div>
+
+  <!-- CONNECTION LINES -->
+  <svg class="connections" viewBox="0 0 400 400">
+    <line x1="200" y1="200" x2="200" y2="60" />
+    <line x1="200" y1="200" x2="340" y2="200" />
+    <line x1="200" y1="200" x2="300" y2="330" />
+    <line x1="200" y1="200" x2="100" y2="330" />
+    <line x1="200" y1="200" x2="60" y2="200" />
+  </svg>
+
+</div>
+
+</section>
+
+
+
+<section class="funding-strip">
+
+<div class="funding-logos">
+
+<a href="https://www.dfg.de/" target="_blank">
+<img src="image/dfg.png" alt="DFG">
+</a>
+
+<a href="https://www.fwf.ac.at/" target="_blank">
+<img src="image/fwf.png" alt="FWF">
+</a>
+
+<a href="https://www.snf.ch/en" target="_blank">
+<img src="image/snf.png" alt="SNF">
+</a>
+
+</div>
+
+
+</section> 
+
+<footer>
+
+<p>Bone Reloaded Project | 2026</p>
+
+</footer>
+
+<script>
+
+window.addEventListener("scroll", function(){
+
+let navbar = document.getElementById("navbar");
+
+if(window.scrollY > 100){
+navbar.classList.add("scrolled");
+}
+else{
+navbar.classList.remove("scrolled");
+}
+
+});
+
+</script>
+
+
+
+<script>
+const bg = document.querySelector(".cursor-bg");
+
+document.addEventListener("mousemove", (e) => {
+  const x = e.clientX;
+  const y = e.clientY;
+
+  bg.style.webkitMaskImage = `
+    radial-gradient(circle 150px at ${x}px ${y}px,
+    black 0%,
+    transparent 100%)
+  `;
+
+  bg.style.maskImage = `
+    radial-gradient(circle 150px at ${x}px ${y}px,
+    black 0%,
+    transparent 100%)
+  `;
+});
+</script>
+
+
+
+</body>
+</html>
