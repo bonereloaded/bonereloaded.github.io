@@ -1,8 +1,9 @@
 .hero{
 
-height:90vh;
+min-height:90vh;
+height:auto;
+padding:100px 20px;
 background-image:url("/image/bone-bg.png");
-background-size:cover;
 background-position:center;
 display:flex;
 align-items:center;
@@ -25,20 +26,19 @@ animation:fadeUp 1.2s ease forwards;
 glow 4s ease-in-out infinite;
 
 }
-@keyframes fadeUp{
-
-to{
-opacity:1;
-transform:translateY(-50%) translateY(0);
-}
-@keyframes glow{
-
-0%,100%{ text-shadow:0 0 10px rgba(255,255,255,0.3); }
-50%{ text-shadow:0 0 20px rgba(255,255,255,0.6); }
-
+@keyframes fadeUp {
+  to {
+    opacity:1;
+    transform:translateY(-50%) translateY(0);
+  }
 }
 
+@keyframes glow {
+  0%,100% { text-shadow:0 0 10px rgba(255,255,255,0.3); }
+  50% { text-shadow:0 0 20px rgba(255,255,255,0.6); }
 }
+
+
 
 .hero-title{
 

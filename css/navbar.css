@@ -11,8 +11,7 @@ align-items:center;
 transition:0.35s;
 padding:18px 0;
 
-background:transparent;
-
+background: rgba(0,0,0,0.3);
 }
 
 .navbar.scrolled{

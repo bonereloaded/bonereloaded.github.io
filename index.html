@@ -23,12 +23,6 @@ window.addEventListener("scroll", function(){
 
 let navbar = document.getElementById("navbar");
 
-if(window.scrollY > 400){
-navbar.classList.add("visible");
-}
-else{
-navbar.classList.remove("visible");
-}
 
 });
 
@@ -94,32 +88,81 @@ we aim to uncover the molecular pathways controlling bone remodeling.
 </section>
 
 
+
 <section class="news" id="news">
 
-<h2>News</h2>
+<h2>Latest News</h2>
+<p class="news-intro">We are currently hiring</p>
 
-<div class="newsbox">
+<div class="news-container">
 
-<h3>Postdoctoral Position in Bone Research</h3>
+  <!-- POSTDOC -->
+  <div class="newsbox">
 
-<p>
-A 3-year postdoctoral position will be available from June 2026 in an FWF-funded project
-at the Ludwig Boltzmann Institute of Osteology in Vienna.
-</p>
+    <div class="news-tag">Reinhold Erben’s Lab</div>
 
-<p>
-The project studies how mechanical loading regulates cortical bone remodeling
-using a stress-shielding sheep model combined with spatial omics.
-</p>
+    <h3>Postdoctoral Position</h3>
 
-<p>
-<strong>Deadline:</strong> April 10, 2026 <br>
-<strong>Email:</strong> Reinhold.Erben@lbg.ac.at
-</p>
+    <p class="news-desc">
+      A 3-year postdoctoral position starting June 2026 at the Ludwig Boltzmann Institute of Osteology in Vienna, focusing on bone remodeling and spatial biology.
+    </p>
+
+    <div class="news-meta">
+      <p><strong>Location:</strong> Vienna + Davos collaboration</p>
+      <p><strong>Start:</strong> June 2026</p>
+      <p><strong>Deadline:</strong> April 15, 2026</p>
+      <p><strong>Apply:</strong> <a href="#">e-recruiter</a></p>
+    </div>
+
+    <!-- HOVER DETAILS -->
+    <div class="news-hover">
+      <p>
+        Research includes sheep models, CT/µCT imaging, histology,
+        spatial transcriptomics, and spatial metabolomics.
+      </p>
+      <p>
+        Work in a highly interdisciplinary and international environment.
+      </p>
+    </div>
+
+  </div>
+
+
+  <!-- TECH ASSISTANT -->
+  <div class="newsbox">
+
+    <div class="news-tag">Reinhold Erben’s Lab</div>
+
+    <h3>Technical Assistant (50%)</h3>
+
+    <p class="news-desc">
+      A 3-year half-time position (20h/week) starting June 2026, supporting histology workflows and spatial biology experiments.
+    </p>
+
+    <div class="news-meta">
+      <p><strong>Location:</strong> Vienna</p>
+      <p><strong>Start:</strong> June 2026</p>
+      <p><strong>Deadline:</strong> April 15, 2026</p>
+      <p><strong>Apply:</strong> <a href="#">e-recruiter</a></p>
+    </div>
+
+    <div class="news-hover">
+      <p>
+        Tasks include paraffin, plastic and cryo-histology,
+        immunohistology, molecular biology, and spatial omics methods.
+      </p>
+      <p>
+        Ideal for candidates interested in combining lab techniques
+        with modern multi-omics approaches.
+      </p>
+    </div>
+
+  </div>
 
 </div>
 
 </section>
+
 
 
 <section class="members" id="members">
@@ -219,7 +262,7 @@ using a stress-shielding sheep model combined with spatial omics.
 
   <!-- CENTER -->
   <div class="center-node">
-    Systems Biology of Bone Remodeling
+    Systems Biology of <br> Bone Remodeling
   </div>
 
   <!-- NODES -->
@@ -327,6 +370,17 @@ document.addEventListener("mousemove", (e) => {
     black 0%,
     transparent 100%)
   `;
+});
+</script>
+
+
+
+<script>
+window.addEventListener("scroll", () => {
+  const scrollTop = window.scrollY;
+  const docHeight = document.body.scrollHeight - window.innerHeight;
+  const progress = (scrollTop / docHeight) * 100;
+  document.getElementById("progressBar").style.width = progress + "%";
 });
 </script>
 

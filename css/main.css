@@ -9,7 +9,7 @@ color:#333;
 
 section{
 
-padding:60px;
+padding:60px 20px;
 max-width:1000px;
 margin: auto;
 
@@ -57,3 +57,4 @@ img{
 max-width:100%;
 height:auto;
 }
+
