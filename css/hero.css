@@ -9,7 +9,17 @@ display:flex;
 align-items:center;
 justify-content:center;
 position:relative;
+ background-size: cover;   /* 🔥 key line */
+  background-repeat: no-repeat;
 
+}
+
+/* 👇 adjust for small screens */
+@media (max-width: 768px){
+  .hero{
+    background-size: contain;
+    background-color: black;
+  }
 }
 
 .hero-overlay{
