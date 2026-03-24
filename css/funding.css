@@ -97,3 +97,21 @@ margin-top:30px;
 }
 
 
+@media (max-width: 768px){
+
+  .funding-logos{
+    grid-template-columns: 1fr;   /* stack logos */
+    gap:15px;
+  }
+
+  .funding-details{
+    grid-template-columns: 1fr;   /* stack grant IDs */
+    gap:10px;
+  }
+
+  .funding-details p{
+    font-size:13px;
+  }
+
+}
+
