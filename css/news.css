@@ -9,10 +9,11 @@ font-size:16px;
 
 /* FLEX LAYOUT */
 .news-container{
-display:flex;
-gap:30px;
-flex-wrap:wrap;
-justify-content:center;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+
+  gap:60px;              /* 🔥 increase spacing */
 }
 
 /* CARD */
@@ -22,7 +23,7 @@ padding: 25px;
 border-radius:12px;
 box-shadow:0 4px 20px rgba(0,0,0,0.08);
 width:100%;
-max-width:360px;
+max-width: 360px;
 min-height:320px;
 position:relative;
 overflow:hidden;
@@ -80,6 +81,7 @@ font-weight:bold;
 
 /* HOVER LAYER */
 .news-hover{
+pointer-events: none;
 position:absolute;
 left:0;
 top:0;
@@ -110,4 +112,12 @@ transform:translateY(0);
 .newsbox:hover{
 transform:translateY(-6px);
 box-shadow:0 12px 35px rgba(0,0,0,0.15);
+}
+
+.news-link{
+  text-decoration: none !important;
+  color: inherit !important;
+
+  display: block !important;     /* 🔥 important */
+  width: 360px !important;       /* 🔥 fixed card width */
 }
